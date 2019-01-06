@@ -1,0 +1,960 @@
+/* Wedding Website CSS */
+
+/* browser reset */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, 
+*:before, 
+*:after {
+  box-sizing: inherit;
+}
+
+body, 
+h1, h2, h3, h4, h5, h6, 
+p, 
+ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* end of browser reset */
+
+/* !! Universal Rules !! */
+
+body {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+}
+
+/* Makes <header> element a flexbox */
+/* Inherits width from body */
+.main-header {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  background: rgb(255, 255, 255);
+}
+
+/* Is a flex item of .main-header and a flexbox containing the heart icons and index link */
+.main-header__link-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+/* Is a flex item of #main-header__link-icon-container */
+/* Styles index link */
+.main-header__link {
+  text-decoration: none;
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5rem;
+  letter-spacing: 0.1em;
+  color: rgb(0, 0, 0);
+  margin: 15px 0;
+}
+
+/* Styles and positions icons */
+.main-header__link__icon {
+  font-size: 1.8rem;
+  margin: 15px 20px;
+  color: rgb(68, 68, 68);
+}
+
+/* Styles <main> block element across all pages */
+.main-container {
+  width: 100%;
+  padding: 20px;
+}
+
+.main-container__heading {
+  font-family: 'Rochester', cursive;
+  font-size: 2.2rem;
+  letter-spacing: 0.1em
+}
+
+/* Style and positons <footer> element */
+.main-footer {
+  width: 100%;  height: auto;
+  background: rgb(255, 255, 255);
+  padding: 30px 0;
+}
+
+/* Makes <nav> container a flexbox and positions flex items vertically */
+/* Horizontal flex positioning would not center the middle link - see following rules for horizontal positioning */
+.main-nav {
+  display: flex;
+  height: auto;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+/* Styles link flex items */
+.main-nav__link {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 0 3%;
+  text-align: center;
+  line-height: 1.8em;
+}
+
+.main-nav__link span {
+  padding-bottom: 5px;
+}
+
+/* Adds underline to links on mouse over */
+.main-nav__link span:hover {
+  border-bottom: 2px solid rgb(70, 130, 180);
+}
+
+
+/* !! Index Page Rules !! */
+
+.index__body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/* Makes <main> element on index page a grid-box */
+.index__main-container {
+  display: grid;
+  grid-template: repeat(28, auto) / repeat(100, 1fr);
+  background: linear-gradient(rgba(70, 130, 180, 0.7), rgb(255, 255, 247), rgba(70, 130, 180, 0.7));
+  text-align: center;
+}
+
+/* Transition: scale() duration for div containing images */
+.index__main-container__image {
+  transition: ease .3s; 
+}
+
+/* Styles images inside div's */
+.index__main-container__image img {
+  border: 2px solid rgb(255, 255, 245);
+  border-radius: 20px;
+}
+
+/* Positions div's on grid and controls overlap depth */
+.index__main-container__image-one {
+  grid-area: 1 / 1 / 9 / 13;
+  z-index: 1;
+}
+
+.index__main-container__image-two {
+  grid-area: 6 / 12 / 14 / 24;
+  z-index: 2;
+}
+
+.index__main-container__image-three {
+  grid-area: 11 / 23 / 19 / 35;
+  z-index: 3;
+}
+
+.index__main-container__image-four {
+  grid-area: 16 / 34 / 24 / 46;
+  z-index: 4;
+}
+
+.index__main-container__image-five {
+  grid-area: 21 / 45 / 29 / 57;
+  z-index: 5;
+}
+
+.index__main-container__image-six {
+  grid-area: 16 / 56 / 24 / 68;
+  z-index: 4;
+}
+
+.index__main-container__image-seven {
+  grid-area: 11 / 67 / 19 / 79;
+  z-index: 3;
+}
+
+.index__main-container__image-eight {
+  grid-area: 6 / 78 / 14 / 90;
+  z-index: 2;
+}
+
+.index__main-container__image-nine {
+  grid-area: 1 / 89 / 9 / 101;
+  z-index: 1;
+}
+
+.index__main-container__image-ten {
+  grid-area: 1 / 43 / 16 / 59;
+}
+
+.index__main-container__paragraph-one {
+  grid-area: 23 / 10 / 27 / 27;
+}
+
+.index__main-container__paragraph-two {
+  grid-area: 23 / 72 / 27 / 97;
+}
+/* End of positioning rules */
+
+/* Makes primary image a circle */
+.index__main-container__image-ten img {
+  border-radius: 50%;
+}
+
+/* Set scale size and scale depth of hovered image div's */
+.index__main-container__image:hover {
+  transform: scale(3.9);
+  z-index: 6;
+}
+
+
+/* The following 8 rules position scaled image div's upon hovering */
+.index__main-container__image-one:hover {
+  transform-origin: 0% 4%;
+}
+
+.index__main-container__image-two:hover {
+  transform-origin: 30% 25%;
+}
+
+
+.index__main-container__image-three:hover,
+.index__main-container__image-seven:hover {
+  transform-origin: 50% 47%;
+}
+
+.index__main-container__image-four:hover,
+.index__main-container__image-six:hover {
+  transform-origin: 50% 69%;
+}
+
+
+.index__main-container__image-five:hover  {
+  transform-origin: 50% 93%;
+}
+
+.index__main-container__image-eight:hover {
+  transform-origin: 70% 25%;
+}
+
+.index__main-container__image-nine:hover {
+  transform-origin: 100% 4%;
+}
+
+.index__main-container__image-ten:hover {
+  transform-origin: 50% 7%;
+  transform: scale(2); /* Changed scale for primary image div */
+}
+/* End of positioning rules for scaled image div's */
+
+/* Changes primary image border shape from circle to same as other image div's on hover */
+.index__main-container__image-ten:hover img {
+  border-radius: 20px;
+}
+
+/* Styles "Please join us" and "September 28, 2019" */
+.index__main-container__paragraph {
+  color: rgb(255, 255, 255);
+  font-family: "Great Vibes", cursive;
+  font-size: 2.5rem;
+  letter-spacing: 0.1em;
+}
+
+
+/* !! Wedding Party Rules !! */
+/* ------------------------- */
+
+/* Enables grid and sets background image */
+.wedding-party__main-container {
+  background: url(images/wedding-party/wedding-party__background__arch.jpg) no-repeat center center;
+  background-size: cover;
+  height: 100%;
+  display: grid;
+  grid-template: auto repeat(5, 1fr)/repeat(12, 1fr);
+  grid-row-gap: 2px;
+}
+
+/* positions page heading */
+.wedding-party__main-container__heading {
+  grid-area: 1 / 5 / 2 / 9;
+  text-align: center;
+}
+
+.wedding-party__main-container__div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.wedding-party__main-container__div h4 {
+  background: url(images/wedding-party/wedding-party__paper1.jpg) no-repeat center center;
+  background-size: cover;
+  padding: 15px 15px 15px 20px;
+  border: outset;
+  border-radius: 10px;
+  font-family: 'Rochester', cursive;
+  font-size: 1.4rem;
+  letter-spacing: 0.1em;
+  text-align: center;
+  line-height: 1.6;
+  align-self: center;
+}
+
+
+.wedding-party__main-container__div h3 {
+  background: url(images/wedding-party/wedding-party__paper1.jpg) no-repeat center center;
+  background-size: cover;
+  padding: 8px 20px 10px;
+  border: outset;
+  border-radius: 10px;
+  font-family: 'Rochester', cursive;
+  font-size: 1.8rem;
+  letter-spacing: 0.1em;
+  align-self: center;
+}
+
+.wedding-party__main-container__div ul {
+  list-style: none;
+  background: url(images/wedding-party/wedding-party__paper1.jpg) no-repeat center center;
+  background-size: cover;
+  padding: 10px 20px;
+  border: outset;
+  border-radius: 10px;
+  font-family: 'Rochester', cursive;
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.wedding-party__main-container__party-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+}
+
+/* Positioning Rules */
+.wedding-party__main-container__div-jess {
+  grid-area: 3 / 6 / 5 / 8;
+}
+
+.wedding-party__main-container__div-h3 {
+  grid-area: 2 / 4 / 3 / 10;
+}
+
+.wedding-party__main-container__div-bridesmaids {
+  grid-area: 3 / 2 / 7 / 6;
+}
+
+.wedding-party__main-container__div-groomsmen {
+  grid-area: 3 / 8 / 6 / 12;
+}
+
+.wedding-party__main-container__icon {
+  grid-area: 5 / 49 / 6 / 51;
+  font-size: 1.5rem;
+  text-align: center;
+  color: rgb(175, 0, 0);
+  padding-top: 6px;
+}
+
+
+/* !! Venue Information Rules !! */
+.venue-information__main-container {
+  /* background: linear-gradient(rgb(70, 130, 180), rgb(255, 255, 247), rgb(70, 130, 180)); */
+  background: rgba(70, 130, 180, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.venue-information__main-container__heading {
+  margin-bottom: 40px;
+}
+
+.venue-information__main-container__grid-container {
+  margin: 40px;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(4, minmax(230px, 1fr));
+  grid-template-rows: repeat(3, minmax(100px, 230px));
+  grid-template-areas:
+        "a b c d"
+        "e f f d" 
+        "e g h h" ;
+}
+
+/* Turns information box into flexbox */
+#venue-information__main-container__information-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#venue-information__main-container__information-container p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.98em;
+}
+
+#venue-information__main-container__information-container p:nth-of-type(1) {
+  margin-top: 8px;
+  line-height: 1.4em;
+  text-align: center;
+}
+
+#venue-information__main-container__information-container p:nth-of-type(2) {
+  margin-top: 20px;
+}
+
+#venue-information__main-container__information-container p:nth-of-type(3) {
+  margin-top: 3px;
+}
+
+#venue-information__main-container__information-container p:nth-of-type(4) {
+  margin-top: 15px;
+}
+
+/* Granular positioning of flex items inside of flexbox */ 
+#venue-information__main-container__information-container h1 {
+  margin-bottom: 10px;
+  font-family: "Playfair Display", serif;
+}
+
+#venue-information__main-container__information-container h1 a {
+  text-decoration: none;
+  color: rgb(0, 0, 83);
+}
+
+#venue-information__main-container__information-container h1 a:hover {
+  text-decoration: none;
+  color: rgb(255, 255, 247);
+  font-weight: 700;
+}
+/* Softens image containers */
+.venue-information__main-container__image-container {
+  border-radius: 2px;
+}
+
+/* Fits images to DIV's */
+.venue-information__main-container__image-container img {
+  height: 100%;
+  width: 100%;
+}
+
+/* Positioning Rules */
+.venue-information__main-container__image-container-one {
+  grid-area: c;
+}
+
+.venue-information__main-container__image-container-two {
+  grid-area: d;
+}
+
+.venue-information__main-container__image-container-three {
+  grid-area: g;
+}
+
+.venue-information__main-container__image-container-four {
+  grid-area: a;
+}
+
+#venue-information__main-container__information-container {
+  grid-area: f;
+}
+.venue-information__main-container__image-container-five {
+  grid-area: b;
+}
+
+.venue-information__main-container__image-container-six {
+  grid-area: h;
+}
+
+.venue-information__main-container__image-container-seven {
+  grid-area: e;
+}
+
+
+/* !! Accommodations Page Rules !! */
+.accommodations__main-container__page-links:link,
+.accommodations__main-container__page-links:visited {
+  color: rgb(255, 255, 240);
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+}
+
+#accommodations__main-container__guests-link-paragraph a:link,
+#accommodations__main-container__guests-link-paragraph a:visited,
+.accommodations__main-container__div-hotel-name h3 a:link,
+.accommodations__main-container__div-hotel-name h3 a:visited,
+.accommodations__main-container__div-hotel-website a:link,
+.accommodations__main-container__div-hotel-website a:visited,
+.accommodations__main-container__div-house-link a:link,
+.accommodations__main-container__div-house-link a:visited {
+  color: rgb(0, 0, 0);
+}
+
+.accommodations__main-container {
+  display: grid;
+  grid-template: repeat(62, auto) / repeat(100, 1fr);
+  background: linear-gradient(rgba(70, 130, 180, 0.8), rgb(255, 255, 247), rgba(70, 130, 180, 0.8));
+}
+
+.accommodations__main-container__div-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  box-shadow: 10px 10px 10px rgb(100, 100, 100);
+  margin-top: 20px;
+  margin-bottom: 25px;
+  border-radius: 4px;
+ }
+
+.accommodations__main-container__div-paragraph p {
+  font-size: 1.2em;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  line-height: 1.4em;
+  margin: 30px 100px;
+  letter-spacing: 0.05em;
+}
+
+.accommodations__main-container__page-links {
+  font-size: 1.2em;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 12px;
+  text-decoration: none;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid transparent;
+}
+
+.accommodations__main-container__page-links:hover {
+  color: rgb(157, 225, 131);
+  border: 1px solid transparent;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+#accommodations__main-container__guests-link-paragraph a:hover {
+  font-weight: 500;
+  text-decoration: none;
+  color: rgb(255, 255, 240);
+}
+
+    /* Position elements on grid */
+.accommodations__main-container__guests-link {
+  grid-area: 3 / 40 / 5 / 46;
+}
+
+.accommodations__main-container__wedding-party-link {
+  grid-area: 3 / 50 / 5 / 62;
+}
+
+.accommodations__main-container__paragraph-one {
+  grid-area: 5 / 1 / 10 / 101;
+}
+
+.accommodations__main-container__div-card-holiday-inn {
+  grid-area: 20 / 11 / 34 / 31;
+}
+
+.accommodations__main-container__div-card-hilton {
+  grid-area: 20 / 41 / 33 / 61;
+}
+
+.accommodations__main-container__div-card-best-western {
+  grid-area: 20 / 71 / 34 / 91;
+}
+
+.accommodations__main-container__paragraph-two {
+  grid-area: 35 / 1 / 38 / 101;
+}
+
+.accommodations__main-container__div-card-bridesmaids-house {
+  grid-area: 50 / 22 / 59 / 44;
+}
+
+.accommodations__main-container__div-card-groomsmens-house {
+  grid-area: 50 / 56 / 60 / 78;
+}
+    /* End of positioning rules */
+
+/* Stlying the Card Flex Items */
+.accommodations__main-container__div-hotel-name,
+.accommodations__main-container__div-title,
+.accommodations__main-container__div-min-stay,
+.accommodations__main-container__div-room-cost,
+.accommodations__main-container__div-hotel-website,
+.accommodations__main-container__div-hotel-phone-number,
+.accommodations__main-container__div-hotel-call,
+.accommodations__main-container__div-reservation-code,
+.accommodations__main-container__div-house-link,
+.accommodations__main-container__div-house-address {
+  margin: 5px;
+  padding: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  text-align: center;
+}
+
+.accommodations__main-container__div-house-address p,
+.accommodations__main-container__div-reservation-code p {
+  line-height: 1.4em;
+}
+
+/* Adds border because image was blending into background */
+.accommodations__main-container__div-card-groomsmens-house .accommodations__main-container__div-house-image {
+  border-top: 1px solid rgb(230, 230, 230);
+}
+
+/* Hotel Name Link Styles */
+.accommodations__main-container__div-hotel-name h3 a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.accommodations__main-container__div-hotel-name h3 a:hover {
+  color: rgb(144, 166, 129);
+  font-weight: 600;
+}
+
+.accommodations__main-container__div-title h3 {
+  font-weight: 500;
+}
+/* End of styles for card flex items */
+
+
+.accommodations__main-container__div-hotel-website a:hover {
+  color: rgb(44, 202, 92);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.accommodations__main-container__div-card-bridesmaids-house .accommodations__main-container__div-house-link a:hover {
+  color: rgb(70, 130, 180);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.accommodations__main-container__div-card-groomsmens-house .accommodations__main-container__div-house-link a:hover {
+  color: rgb(134, 136, 138);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* !! Event Information Page Rules !! */
+.event-information__main-container {
+  background: linear-gradient(rgba(70, 130, 180, 0.7), rgb(202, 220, 235), rgba(70, 130, 180, 0.7));
+  font-family: "Montserrat", sans-serif;
+}
+
+.event-information__main-container__flexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.event-information__main-container__div-card {
+  background: rgba(255, 255, 245, 0.9);
+  border-radius: 3px;
+  text-align: center;
+  width: 40%;
+  height: 80%;
+  padding: 15px 15px;
+}
+
+.event-information__main-container__card-h3 {
+  font-size: 1.6em;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid rgb(70, 130, 180);
+}
+
+.event-information__main-container__card-h3 .fas {
+  font-size: 1.2em;
+  margin-left: 10px;
+  color: rgba(70, 130, 180, 0.6);
+}
+
+.event-information__main-container__div-card p {
+  margin: 5px 0;
+  line-height: 1.6em;
+  font-size: 1.1em;
+}
+
+.event-information__main-container__div-card p:last-of-type {
+  margin-top: 15px;
+}
+
+.event-information__main-container__div-card .event-information__main-container__card-bold {
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+}
+
+/* !! Registry Page Rules !! */
+.registry__main-container {
+  padding-top: 0;
+}
+
+.registry__main-footer {
+  padding-top: 0;
+}
+
+/* Media Rules */
+@media screen and (max-width: 1300px) {
+  .main-header__link {
+    text-align: center;
+  }
+
+  .index__main-container__paragraph {
+    text-align: center;
+  }
+
+  .main-container__paragraph {
+    text-align: center;
+  }
+
+  .main-nav__link span:hover {
+    border: none;
+    text-decoration: underline solid rgb(70, 130, 180);
+  }
+
+  .accommodations__main-container__page-links {
+    border: none;
+    background: none;
+    font-size: 0.9em;
+  }
+
+  .accomodation__main-container__page-links:hover {
+    background: none;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .index__main-container p {
+    font-size: 1.7em;
+  }
+
+  .event-information__main-container__flexbox {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+.event-information__main-container__div-card {
+  width: 90%;
+}
+
+  .event-information__main-container__div-card:last-of-type {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .index__main-container p {
+    font-size: 1.6em;
+  }
+
+  .wedding-party__main-container div h3,
+  .wedding-party__main-container div h4,
+  .wedding-party__main-container div h4 span,
+  .wedding-party__main-container__div ul,
+  .wedding-party__main-container__div ul, 
+  .wedding-party__main-container__div h3 i {
+    font-size: 1.0em;
+  }
+
+  .accommodations__main-container__page-links {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 925px) {
+  .main-header__link {
+    text-align: center;
+  }
+
+  .main-container__paragraph {
+    text-align: center;
+  }
+
+  .main-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+
+  .main-nav__link span:hover {
+    border: none;
+    text-decoration: underline solid rgb(70, 130, 180);
+  }
+
+  .index__main-container p {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 875px) {
+  .index__main-container p {
+    font-size: 1.4em;
+  }
+
+  .accommodations__main-container__page-links {
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main-header__link {
+    text-align: center;
+  }
+
+  .main-container__paragraph {
+    text-align: center;
+  }
+
+  .main-nav{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+  }
+
+  .main-nav__link span:hover {
+    border: none;
+    text-decoration: underline solid rgb(70, 130, 180);
+  }
+
+  .index__main-container p {
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  .main-header__link-icon-container i{
+    font-size: 0.8em;
+  }
+
+  .main-header__link-icon-container a {
+    font-size: 1.2em;
+  }
+
+  .main-nav__link {
+    font-size: 0.7em;
+  }
+
+  .index__main-container p {
+    font-size: 1.2em;
+  }
+
+  .wedding-party__main-container div h3,
+  .wedding-party__main-container div h4,
+  .wedding-party__main-container div h4 span,
+  .wedding-party__main-container__div ul,
+  .wedding-party__main-container__div ul, 
+  .wedding-party__main-container__div h3 i {
+    font-size: 1.0em;
+  }
+
+  .accommodations__main-container__page-links {
+    font-size: 0.6em;
+  }
+
+  .venue-information__main-container__grid-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #venue-information__main-container__information-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 693px) {
+  .index__main-container p {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .index__main-container p {
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .index__main-container p {
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main-nav__link {
+    font-size: 0.6em;
+  }
+
+  .index__main-container__paragraph {
+    font-size: 0.7em;
+    text-align: center;
+  }
+
+  .wedding-party__main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+  .accommodations__main-container__page-links {
+    font-size: 0.8em;
+  }
+
+  .accommodations__main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .accommodations__main-container div p {
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .index__main-container p {
+    font-size: 0.4em;
+  }
+}
+/* End of Media Rules */
