@@ -278,7 +278,7 @@ body {
 
 /* Enables grid and sets background image */
 .wedding-party__main-container {
-  background: url(images/wedding-party/wedding-party__background__arch.jpg) no-repeat center center;
+  background: url(Images/wedding-party/wedding-party__background__arch.jpg) no-repeat center center;
   background-size: cover;
   height: 100%;
   display: grid;
@@ -299,7 +299,7 @@ body {
 }
 
 .wedding-party__main-container__div h4 {
-  background: url(images/wedding-party/wedding-party__paper1.jpg) no-repeat center center;
+  background: url(Images/wedding-party/wedding-party__paper1.jpg) no-repeat center center;
   background-size: cover;
   padding: 15px 15px 15px 20px;
   border: outset;
@@ -314,7 +314,7 @@ body {
 
 
 .wedding-party__main-container__div h3 {
-  background: url(images/wedding-party/wedding-party__paper1.jpg) no-repeat center center;
+  background: url(Images/wedding-party/wedding-party__paper1.jpg) no-repeat center center;
   background-size: cover;
   padding: 8px 20px 10px;
   border: outset;
@@ -327,7 +327,7 @@ body {
 
 .wedding-party__main-container__div ul {
   list-style: none;
-  background: url(images/wedding-party/wedding-party__paper1.jpg) no-repeat center center;
+  background: url(Images/wedding-party/wedding-party__paper1.jpg) no-repeat center center;
   background-size: cover;
   padding: 10px 20px;
   border: outset;
