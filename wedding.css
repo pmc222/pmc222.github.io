@@ -764,8 +764,8 @@ body {
     align-items: center;
   }
 
-.event-information__main-container__div-card {
-  width: 90%;
+  .event-information__main-container__div-card {
+    width: 90%;
 }
 
   .event-information__main-container__div-card:last-of-type {
@@ -902,6 +902,10 @@ body {
     display: flex;
     flex-direction: column;
   }
+  
+  .venue-information__main-container__image-container {
+    width: 90%;
+  }
 
   #venue-information__main-container__information-container {
     display: flex;
@@ -910,8 +914,9 @@ body {
     align-items: center;
     text-align: center;
     margin-bottom: 5px;
+    width: 90%;
   }
-}
+  
 
 @media screen and (max-width: 693px) {
   .index__main-container p {
