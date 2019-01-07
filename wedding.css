@@ -166,7 +166,7 @@ body {
 }
 
 .index__main-container__image-four {
-  grid-area: 16 / 34 / 24 / 46;
+  grid-area: 17 / 34 / 25 / 46;
   z-index: 4;
 }
 
@@ -176,7 +176,7 @@ body {
 }
 
 .index__main-container__image-six {
-  grid-area: 16 / 56 / 24 / 68;
+  grid-area: 17 / 56 / 25 / 68;
   z-index: 4;
 }
 
