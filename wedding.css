@@ -215,7 +215,7 @@ body {
 
 /* Set scale size and scale depth of hovered image div's */
 .index__main-container__image:hover {
-  transform: scale(3.9);
+  transform: scale(3.7);
   z-index: 6;
 }
 
@@ -255,7 +255,7 @@ body {
 
 .index__main-container__image-ten:hover {
   transform-origin: 50% 7%;
-  transform: scale(2); /* Changed scale for primary image div */
+  transform: scale(1.8); /* Changed scale for primary image div */
 }
 /* End of positioning rules for scaled image div's */
 
