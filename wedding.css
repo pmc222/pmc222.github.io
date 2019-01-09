@@ -57,7 +57,7 @@ body {
 .main-header__link {
   text-decoration: none;
   font-family: 'Great Vibes', cursive;
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   letter-spacing: 0.1em;
   color: rgb(0, 0, 0);
   margin: 15px 0;
@@ -74,12 +74,6 @@ body {
 .main-container {
   width: 100%;
   padding: 20px;
-}
-
-.main-container__heading {
-  font-family: 'Rochester', cursive;
-  font-size: 2.2rem;
-  letter-spacing: 0.1em
 }
 
 /* Style and positons <footer> element */
@@ -215,18 +209,18 @@ body {
 
 /* Set scale size and scale depth of hovered image div's */
 .index__main-container__image:hover {
-  transform: scale(3.7);
+  transform: scale(3.5);
   z-index: 6;
 }
 
 
 /* The following 8 rules position scaled image div's upon hovering */
 .index__main-container__image-one:hover {
-  transform-origin: 0% 4%;
+  transform-origin: 0% 0%;
 }
 
 .index__main-container__image-two:hover {
-  transform-origin: 30% 25%;
+  transform-origin: 30% 22%;
 }
 
 
@@ -237,7 +231,7 @@ body {
 
 .index__main-container__image-four:hover,
 .index__main-container__image-six:hover {
-  transform-origin: 50% 69%;
+  transform-origin: 50% 71%;
 }
 
 
@@ -246,16 +240,16 @@ body {
 }
 
 .index__main-container__image-eight:hover {
-  transform-origin: 70% 25%;
+  transform-origin: 70% 22%;
 }
 
 .index__main-container__image-nine:hover {
-  transform-origin: 100% 4%;
+  transform-origin: 100% 0%;
 }
 
 .index__main-container__image-ten:hover {
-  transform-origin: 50% 7%;
-  transform: scale(1.8); /* Changed scale for primary image div */
+  transform-origin: 50% 4%;
+  transform: scale(1.9); /* Changed scale for primary image div */
 }
 /* End of positioning rules for scaled image div's */
 
@@ -268,7 +262,7 @@ body {
 .index__main-container__paragraph {
   color: rgb(255, 255, 255);
   font-family: "Great Vibes", cursive;
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   letter-spacing: 0.1em;
 }
 
