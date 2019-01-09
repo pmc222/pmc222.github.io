@@ -216,13 +216,12 @@ body {
 
 /* The following 8 rules position scaled image div's upon hovering */
 .index__main-container__image-one:hover {
-  transform-origin: 0% 0%;
+  transform-origin: 0% -3%;
 }
 
 .index__main-container__image-two:hover {
   transform-origin: 30% 22%;
 }
-
 
 .index__main-container__image-three:hover,
 .index__main-container__image-seven:hover {
@@ -231,12 +230,12 @@ body {
 
 .index__main-container__image-four:hover,
 .index__main-container__image-six:hover {
-  transform-origin: 50% 71%;
+  transform-origin: 50% 77%;
 }
 
 
 .index__main-container__image-five:hover  {
-  transform-origin: 50% 93%;
+  transform-origin: 50% 101%;
 }
 
 .index__main-container__image-eight:hover {
@@ -244,7 +243,7 @@ body {
 }
 
 .index__main-container__image-nine:hover {
-  transform-origin: 100% 0%;
+  transform-origin: 100% -3%;
 }
 
 .index__main-container__image-ten:hover {
