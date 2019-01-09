@@ -40,7 +40,7 @@ body {
 .main-header {
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   width: 100%;
   background: rgb(255, 255, 255);
 }
@@ -277,12 +277,6 @@ body {
   display: grid;
   grid-template: auto repeat(5, 1fr)/repeat(12, 1fr);
   grid-row-gap: 2px;
-}
-
-/* positions page heading */
-.wedding-party__main-container__heading {
-  grid-area: 1 / 5 / 2 / 9;
-  text-align: center;
 }
 
 .wedding-party__main-container__div {
