@@ -981,5 +981,9 @@ body {
   .index__main-container p {
     font-size: 0.4em;
   }
+  
+  .accomodations__main-container__div-paragraph p {
+    font-size: 0.6em;
+  }
 }
 /* End of Media Rules */
