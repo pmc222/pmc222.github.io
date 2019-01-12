@@ -908,6 +908,7 @@ body {
     flex-direction: column;
     width: 100%;
     align-items: center;
+    justify-content: flex-start;
   }
 
   .venue-information__main-container__image-container {
