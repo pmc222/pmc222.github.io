@@ -770,7 +770,7 @@ body {
   }
 
   .event-information__main-container__div-card {
-    width: 90%;
+    width: 95%;
 }
 
   .event-information__main-container__div-card:last-of-type {
@@ -912,7 +912,7 @@ body {
   }
 
   .venue-information__main-container__image-container {
-    width: 90%;
+    width: 95%;
   }
 
   #venue-information__main-container__information-container {
@@ -922,7 +922,7 @@ body {
     align-items: center;
     text-align: center;
     margin-bottom: 5px;
-    width: 90%;
+    width: 95%;
   }
   
 
