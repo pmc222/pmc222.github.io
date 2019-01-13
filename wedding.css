@@ -727,10 +727,6 @@ body {
     text-align: center;
   }
 
-  .index__main-container__paragraph {
-    text-align: center;
-  }
-
   .main-container__paragraph {
     text-align: center;
   }
@@ -738,6 +734,10 @@ body {
   .main-nav__link span:hover {
     border: none;
     text-decoration: underline solid rgb(70, 130, 180);
+  }
+
+  .index__main-container__paragraph {
+    text-align: center;
   }
 
   .accommodations__main-container__page-links {
@@ -934,13 +934,17 @@ body {
 
 @media screen and (max-width: 675px) {
   .index__main-container p {
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
 }
 
 @media screen and (max-width: 530px) {
   .index__main-container p {
     font-size: 0.7em;
+  }
+
+  .accommodations__main-container__div-paragraph p {
+    font-size: 0.9em;
   }
 }
 
@@ -981,8 +985,8 @@ body {
   .index__main-container p {
     font-size: 0.4em;
   }
-  
-  .accomodations__main-container__div-paragraph p {
+
+  .accommodations__main-container__div-paragraph p {
     font-size: 0.6em;
   }
 }
