@@ -379,7 +379,7 @@ body {
   grid-template-areas:
         "a b c d"
         "e f f d" 
-        "e g h h" ;
+        "e g h i" ;
 }
 
 /* Turns information box into flexbox */
@@ -475,6 +475,9 @@ body {
   grid-area: e;
 }
 
+.venue-information__main-container__image-container-eight {
+  grid-area: i;
+}
 
 /* !! Accommodations Page Rules !! */
 .accommodations__main-container__page-links:link,
