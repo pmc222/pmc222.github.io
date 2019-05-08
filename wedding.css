@@ -706,7 +706,54 @@ body {
 /* !! Registry Page Rules !! */
 .registry__main-container {
   padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+.registry__main-container p {
+  line-height: 1.6em;
+}
+
+.registry__main-container--amazon-registry {
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.registry__main-container--amazon-button {
+  font-family: "Montserrat", sans-serif;
+  background: rgb(240, 193, 75);
+  margin: 20px;
+  box-shadow: inset 0 0 0 1px rgb(233, 188, 74);
+  border-radius: 5px;
+}
+
+.registry__main-container--amazon-button:hover {
+  box-shadow: inset 0 0 0 1px rgb(233, 188, 74), 0 2px 6px rgb(211, 172, 73);
+}
+
+.registry__main-container--amazon-button:active {
+  box-shadow: inset 0 0 0 1px rgb(233, 188, 74),inset 0 2px 12px rgb(211, 172, 73);
+  text-shadow: -1px 1px rgb(194, 157, 63);
+  border: solid 1px rgb(28, 25, 25);
+}
+
+.registry__main-container--amazon-link {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(28, 25, 25);
+  padding: 12px 75px;
+  font-weight: 600;
+  height: 100%;
+  width: 100%;
+} 
 
 .registry__main-footer {
   padding-top: 0;
