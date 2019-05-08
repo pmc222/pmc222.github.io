@@ -986,6 +986,14 @@ body {
   .index__main-container p {
     font-size: 0.8em;
   }
+  
+  .registry__main-container--amazon-registry {
+    font-size: 0.8em;
+  }
+
+  .registry__main-container--amazon-registry p {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 530px) {
