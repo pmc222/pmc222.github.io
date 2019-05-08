@@ -714,6 +714,7 @@ body {
 
 .registry__main-container p {
   line-height: 1.6em;
+  text-align: center;
 }
 
 .registry__main-container--amazon-registry {
