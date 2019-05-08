@@ -994,6 +994,10 @@ body {
   .registry__main-container--amazon-registry p {
     text-align: center;
   }
+  
+  .registry__main-container--amazon-link {
+    font-size: 0.7rem;
+  }
 }
 
 @media screen and (max-width: 530px) {
